@@ -1,0 +1,176 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\eduSubheading}[5]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1}, #2 & #3 \\
+      \textit{\small#4} & \textit{\small #5} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    \textbf{\Huge \scshape Haichang Li} \\ \vspace{1pt}
+    \small 323-736-2002 $|$ \href{mailto:li4560@purdue.edu}{\underline{li4560@purdue.edu}} $|$ 
+    \href{https://haichang.li}{\underline{https://haichang.li}}
+\end{center}
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \eduSubheading
+      {Purdue University}{\textit{\small West Lafayette, IN}}
+      {2022 -- 2025\textit{\small(Expected)}}
+      {Bachelor of Computer Information Technology, Minor in Communication}{GPA: 3.98/4.0}
+      \item
+      \textit{\small Previously dropped out of \href{https://www.liverpool.ac.uk/courses/xjtlu/electrical-engineering-beng/electrical-and-electronic-engineering-with-a-year-abroad-beng-hons}{\underline{EEE Honors Program}} at UoL\&XJTLU with first-class honors grade of Non-degree coursework}
+      
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {\href{https://www.de4m.xyz/people.html}{\underline{DE4M Lab}}}{West Lafayette, IN}
+      {Undergraduate Research Assistant, Supervised by Prof. Liang He}{Oct 2023 -- Present}
+      \resumeItemListStart
+        \resumeItem{Led collaboration to develop a system enhancing 3D printing accessibility for blind users. Pioneered the use of OpenSCAD and LLM to design accessible interaction modes that significantly enhanced the user experience.}
+        \resumeItem{Developed and engineered user-centric interaction methods specifically tailored for low-vision users with voice and keyboards, worked on designing user interfaces and prototyping websites, which significantly optimized functionality customization.}
+        \resumeItem{Integrated LLM multi-agent framework to achieve intelligent code generation and model description, boosting design efficiency and accuracy, and promoting the accessibility and inclusive design of 3D printing technology.}
+        \resumeItem{Explored accessible design in development by researching the use of assistive programming tools among low-vision programmers. Developed a system that converts visual information into textual formats, facilitating the understanding and modification of existing code for visually impaired users.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {\href{https://www.shineresume.com}{\underline{Tanyu.mobi}}}{Shenzhen \& Changsha, CN}
+      {Founding Member, Shine Resume, Initial team of 5 people}{Apr 2023 -- Aug 2023}
+      \resumeItemListStart
+        \resumeItem{Conceptualized and launched 'Shine Resume', integrating AIGC and LLM to create a product for undervalued new grad that addressed significant gaps of China in the employment market for post-pandemic recovery, attracting external funding of 10M CNY and gaining initial user adoption.}
+        \resumeItem{Developed a complete Multi-agents system for resume writing using LLM, ensuring compliance with ethics and Chinese law, incorporating the sensitive word filtration and optimizing language and output formatting, enhancing user engagement.}
+        \resumeItem{Leveraged advanced AI models to extract critical keywords from resumes and job descriptions, enhancing vector database retrieval. This innovation bridged the gap between recruitment demands and candidate profiles, ensuring precise alignment of resumes with job specifications.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {\href{https://ai4musicians.org/}{\underline{AIM Group}}}{West Lafayette, IN}
+      {Research Assistant \& Leader, Supervised by Prof. Yung-hsiang Lu \& Prof. Yeon-Ji Yun}{Feb 2023 -- Present}
+      \resumeItemListStart
+        \resumeItem{Led the development of 'Mus2Vid', a innovative system employing LLM and AI generative technologies to visualize music for performers and hearing-impaired individuals. Integrated GPT to generate art content with prompt engineering and explore the design of multi-modal LLM based on LLaMA.}
+        \resumeItem{Utilizes emotions as the bridge to align music and visuals, implemented an recurrent and transformer model to analyze classical music, capturing emotional and genre-specific characteristics to informs the diffusion model to visually represent the emotions perceived in the music.}
+        \resumeItem{Engaged in prototyping and initial user research prior to leading the project; conducted various quantitative studies to explore the application of generative art within the music field, co-authored the user study: Brian Ng, Samantha Sudhoff, Haichang Li, Joshua Kamphuis, Tim Nadolsky, Yingjie Chen, Kristen Yeon-Ji Yun, and Yung-Hsiang Lu, "Visualize Music Using Generative Arts," \textit{2024 IEEE Conference on Artificial Intelligence (CAI),} Singapore, 2024. }
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+%-----------PROJECTS-----------
+\section{Projects}
+  \resumeSubHeadingListStart
+    \resumeProjectHeading
+        {\href{https://www.liverpool.ac.uk/courses/xjtlu/electrical-engineering-beng/electrical-and-electronic-engineering-with-a-year-abroad-beng-hons}{\underline{\textbf{Plug-and-play Social Robot based on LLM}}}}{Grad course Assistive Robotics}
+        
+          \resumeItem{Developed a modular, multimodal social robot designed to support individuals with depression by processing diverse inputs like voice, facial expressions, and text. The system adapts to user needs with its plug-and-play design and also incorporates LLM to enhance decision-making, ensuring effective support even with expressive limitations.}
+        
+  \resumeSubHeadingListEnd
+
+%-----------TECHNICAL SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Python, C, JAVA}  
+     \textbf{Tools}{: ML - TensorFlow/Scikit-learn/Genism/Pandas/Numpy, PM tools such as Figma}
+    }}
+ \end{itemize}
+
+\end{document}
